@@ -1,5 +1,6 @@
 def tip_calculator():
         while True:
+            print(f"welcome to the Tip Calculator!")
             total_bill = input("Hey User, Please enter your total bill:\n")
             if not total_bill.replace('.', '', 1).isdigit():
                     print(f"Please enter a valid amount")
