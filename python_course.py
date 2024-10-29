@@ -49,4 +49,15 @@ num += 1
 print(num)
 
 
+def odd_or_even():
+    number_to_check = int(input("Please enter the number to check even or odd:\n"))
+    if number_to_check % 2 == 0:
+        print("the number you have entered is an even number")
+    else:
+        print("the number you have entered is an odd number")
+
+odd_or_even()
+                          
+
+
 
