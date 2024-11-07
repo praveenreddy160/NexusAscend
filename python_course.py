@@ -59,5 +59,67 @@ def odd_or_even():
 odd_or_even()
                           
 
+def sum_of_numbers():
+    student_scores = [150, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360]
+    # total_exam_score = sum(student_scores)
+    total_sum = 0
+    for score in student_scores:
+        total_sum += score
+        print(total_sum)
 
 
+sum_of_numbers()
+
+
+def max_marks():
+    student_marks = [150, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360]
+    max_marks = 0
+    for marks in student_marks:
+      if marks > max_marks:
+         max_marks = marks
+    print(max_marks)
+
+max_marks()
+
+gauss = 0
+for number in range(1, 100+1):
+    gauss += number # it means gauss = gauss + number 
+print(gauss)
+ 
+
+for number in range(1, 100 + 1):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
+
+
+
+print(len('hello'))
+
+    
+def user_quiz():
+  
+    print(f"hey, user welcome to the Quiz. Please click 'yes' in the next Step") 
+
+    questions = [{"question": "what is the capital of Telangana", "Answer": "Hyderabad"},
+                {"question": "who is the chief minister of Telangana", "Answer": "KCR"},
+                {"question": "who implemented rythu bandhu in Telangana", "Answer": "KCR"}]
+    
+    Score = 0
+    for ask in questions:
+        user_first_question = input(ask["question"] + "\n")
+        if user_first_question.lower() == ask["Answer"].lower():
+            print("Right Answer")
+            Score +=1
+
+        else:
+            print("Incorrect Answer")
+    print(f"Hey, User your final_score is: {Score}, out of {len(questions)}")
+    
+
+user_quiz()
