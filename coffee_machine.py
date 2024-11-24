@@ -40,7 +40,7 @@ def check_resources(drink):
     """checking if we have enough resources or not"""
     for ingredients, amount in menu[drink]["ingredients"].items():
         if resources[ingredients] < amount:
-            print(f"sorry you dont have enough resources{ingredients}")
+            print(f"sorry you dont have enough resources: {ingredients}")
             return False
     return True
 
