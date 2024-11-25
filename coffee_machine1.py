@@ -48,9 +48,9 @@ def process_coins():
     """here i'm prompting the user to enter the number of coins for the coffee"""
     print(f"Hey, User, Please insert the coins for the coffee")
     total = int(input("how many quarters?:\n")) * 0.25
-    total += int(input("how many dimes?: ")) * 0.1
-    total += int(input("how many nickles?: ")) * 0.05
-    total += int(input("how many pennies?: ")) * 0.01
+    total += int(input("how many dimes?:\n ")) * 0.1
+    total += int(input("how many nickles?:\n ")) * 0.05
+    total += int(input("how many pennies?: \n")) * 0.01
     return total
 
 def make_coffee(drink):
