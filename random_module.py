@@ -1,11 +1,11 @@
-import random
+# import random
 
-def pick_credit_cards():
-    Bill = ["sunny", "Aaron", "Satti", "PR"]
-    return (random.choice(Bill))
+# def pick_credit_cards():
+#     Bill = ["sunny", "Aaron", "Satti", "PR"]
+#     return (random.choice(Bill))
 
-new_bill = pick_credit_cards()
-print(new_bill)
+# new_bill = pick_credit_cards()
+# print(new_bill)
 
 
 # def my_fruits():
@@ -34,3 +34,10 @@ print(new_bill)
 #     return n1 + n2
 # my_favourite_operation = add
 # print(my_favourite_operation(2, 3))
+
+
+with open("C:/Users/prave/NexusAscend/note.txt", "w+") as file:
+    num_chars_written = file.write("I Love You Neha")
+    file.seek(0)
+    print(num_chars_written)
+    print(file.read())
