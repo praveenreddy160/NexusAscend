@@ -41,3 +41,4 @@ with open("C:/Users/prave/NexusAscend/note.txt", "w+") as file:
     file.seek(0)
     print(num_chars_written)
     print(file.read())
+""""Successful"""
