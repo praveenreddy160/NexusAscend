@@ -42,3 +42,17 @@ with open("C:/Users/prave/NexusAscend/note.txt", "w+") as file:
     print(num_chars_written)
     print(file.read())
 """"Successful"""
+
+
+# place_holder = "[name]"
+# with open("./Input/Names/invited_names.txt") as file:
+#     Letter = file.readlines()
+
+# with open("./Input/Letters/starting_letter.txt") as file:
+#     letter1 = file.read()
+#     # print(letter1)
+#     for name in Letter:
+#         stripped_name = name.strip()
+#         new_letter = letter1.replace(place_holder, stripped_name)
+#         with open(f"./Output/ReadyToSend/letter_for_{stripped_name}.txt", mode="w") as file:
+#             file.write(new_letter)
