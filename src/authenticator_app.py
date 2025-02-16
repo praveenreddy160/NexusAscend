@@ -32,10 +32,18 @@ def save():
 	if len(website) ==0 or len(password) ==0:
 		messagebox.showinfo(title="Oops", message= "you've forgot something, Please check")
 	else:
-		is_okay = messagebox.askokcancel(title= website, message= f"These are the details entered: /nEmail: {email} " f"/n password: {password} /n Is it okay to save?")
-		if is_okay:
-			with open("data.txt", "a") as file:
-				file.write(f"{website} | {email} | {password}\n")
+			try:
+				with open("data.json", "r") as file:
+					new_data = json.load(file)
+			except FileNotFoundError:
+				with open("data.json", "w") as file:	
+					json.dump(new_data, file, indent=4)
+			else:
+				new_data.update(website_data)
+
+				with open("data.json", "w") as file:	
+					json.dump(new_data, file, indent=4)
+			finally:
 				website_entry.delete(0, END)
 				password_entry.delete(0, END)
 
