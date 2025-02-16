@@ -63,8 +63,8 @@ def save():
 				with open("data.json", "r") as file:
 					new_data = json.load(file)
 			except FileNotFoundError:
-				with open("data.json", "r") as file:
-					new_data = json.load(file)
+				with open("data.json", "w") as file:	
+					json.dump(new_data, file, indent=4)
 			else:
 				new_data.update(website_data)
 
