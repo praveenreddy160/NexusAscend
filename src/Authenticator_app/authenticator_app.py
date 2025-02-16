@@ -63,13 +63,8 @@ def save():
 				with open("data.json", "r") as file:
 					new_data = json.load(file)
 			except FileNotFoundError:
-<<<<<<< HEAD:src/authenticator_app.py
-				with open("data.json", "w") as file:	
-					json.dump(new_data, file, indent=4)
-=======
-				with open("data.json", "r") as file:
+				with open("data.json", "w") as file:
 					new_data = json.load(file)
->>>>>>> d4d3b4bbc9f69735e0c002c4182030038ab2bedd:src/Authenticator_app/authenticator_app.py
 			else:
 				new_data.update(website_data)
 
