@@ -2,7 +2,6 @@ import smtplib
 import datetime as dt
 import random
 from email.mime.text import MIMEText
-import os
 
 def send_challenge_email(sender_email, sender_password, recipient, subject, template_file):
     """
