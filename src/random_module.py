@@ -79,10 +79,43 @@
 # nemo.sales()
 
 
-letter = ["a", "b", "c", "d", "e", "f", "g"]
-print(letter[2:5:3])
+# letter = ["a", "b", "c", "d", "e", "f", "g"]
+# print(letter[2:5:3])
 
-number = [1, 2, 3, 4, 5, 6, 7]
-print(number[::-3])
+# number = [1, 2, 3, 4, 5, 6, 7]
+# print(number[::-3])
 
 
+# file = open("src\praveen.txt")
+# contents = file.read()
+# print(contents)
+# file.close()
+
+# with open("puspa dialogues.txt", mode='w') as file:
+#     file.write("Galla patti lakkostha... Rappa Rappa Rappa!")
+
+# with open("puspa dialogues.txt", mode="r") as file:
+#     content = file.read()
+#     print(content)
+
+
+
+# with open("puspa dialogues.txt", mode="a") as file:
+#     file.write("\nGalla patti lakkostha... Rappa Rappa Rappa!")
+
+
+# with open("../Desktop/slokas.txt", mode="r", encoding="utf-8") as file:
+#     content = file.read()
+#     print(content)
+
+
+with open("src/email_list.txt", encoding="utf-8", mode="r") as file:
+    content = file.readlines()  # readlines() creates a list of strings, one for each line
+    # Use list comprehension to strip the \n from each item
+    clean_content = [item.strip() for item in content]
+    print(clean_content)
+
+    
+    
+
+#
